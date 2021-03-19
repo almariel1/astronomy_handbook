@@ -1,0 +1,183 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background" >
+
+    <!-- Line 1 -->
+    <View
+        android:id="@+id/line_1"
+        android:layout_width="530dp"
+        android:layout_height="3dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="214dp"
+        android:background="@color/white"/>
+
+    <!-- Планеты -->
+    <ImageView
+        android:id="@+id/image_planets"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center_vertical"
+        android:src="@drawable/planets" />
+
+    <TextView
+        android:id="@+id/text_planets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="160dp"
+        android:gravity="center"
+        android:text="@string/planets"
+        android:textAppearance="@style/menu" />
+
+    <!-- Солнечная система -->
+    <ImageView
+        android:id="@+id/image_solar_system"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="44dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center_vertical"
+        android:src="@drawable/solar_system" />
+
+    <TextView
+            android:id="@+id/text_solar_system"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="21dp"
+            android:layout_marginTop="147dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/solar_system"
+            android:textAppearance="@style/menu" />
+
+
+    <!-- Line 2 -->
+    <View
+        android:id="@+id/line_2"
+        android:layout_width="530dp"
+        android:layout_height="3dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="404dp"
+        android:background="@color/white"/>
+
+
+    <!-- Звезды -->
+    <ImageView
+        android:id="@+id/image_stars"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="235dp"
+        android:gravity="center_vertical"
+        android:src="@drawable/stars" />
+
+    <TextView
+            android:id="@+id/text_stars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="348dp"
+            android:gravity="center_vertical"
+            android:text="@string/stars"
+            android:textAppearance="@style/menu" />
+
+    <!-- Млечный путь -->
+    <ImageView
+        android:id="@+id/image_milky_way"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="44dp"
+        android:layout_marginTop="235dp"
+        android:gravity="center_vertical"
+        android:src="@drawable/milky_way" />
+
+    <TextView
+            android:id="@+id/text_milky_way"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="37dp"
+            android:layout_marginTop="335dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/milky_way"
+            android:textAppearance="@style/menu" />
+
+
+    <!-- Line 3 -->
+    <View
+        android:id="@+id/line_4"
+        android:layout_width="3dp"
+        android:layout_height="530dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="100dp"
+        android:background="@color/white"/>
+
+
+
+    <!-- Вселенная -->
+    <ImageView
+        android:id="@+id/image_universe"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="440dp"
+        android:gravity="center_vertical"
+        android:src="@drawable/universe" />
+
+    <TextView
+        android:id="@+id/text_universe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="560dp"
+        android:gravity="center_vertical"
+        android:text="@string/universe"
+        android:textAppearance="@style/menu" />
+
+    <ImageView
+        android:id="@+id/image_space_time"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="44dp"
+        android:layout_marginTop="440dp"
+        android:gravity="center_vertical"
+        android:src="@drawable/blackhole" />
+
+    <TextView
+        android:id="@+id/text_space_time"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="21dp"
+        android:layout_marginTop="548dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/space_time"
+        android:textAppearance="@style/menu" />
+
+
+
+
+</RelativeLayout>

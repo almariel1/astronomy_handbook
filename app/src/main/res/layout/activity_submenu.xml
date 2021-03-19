@@ -1,0 +1,27 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background" >
+
+
+    <Button
+        android:id="@+id/submenu_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/submenu_button"
+        android:drawablePadding="20dp"
+        android:drawableRight="@drawable/mercury"
+        android:padding="20dp"
+        android:text="TEКСТ"
+        android:textColor="@color/background"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/submenu"
+        android:onClick=""/>
+
+
+</LinearLayout>

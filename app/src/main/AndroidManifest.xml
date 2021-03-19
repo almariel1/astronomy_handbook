@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.astronomy_handbook">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Holo" >
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MenuActivity"
+            android:label="Главное меню"    />
+        <activity
+            android:name=".PlanetsActivity"
+            android:label="@string/planets"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".SolarSystemActivity"
+            android:label="@string/solar_system"
+            android:theme="@android:style/Theme.NoTitleBar"  />
+        <activity
+            android:name=".StarsActivity"
+            android:label="@string/stars"
+            android:theme="@android:style/Theme.NoTitleBar"  />
+        <activity
+            android:name=".MilkyWayActivity"
+            android:label="@string/milky_way"
+            android:theme="@android:style/Theme.NoTitleBar"  />
+        <activity
+            android:name=".UniverseActivity"
+            android:label="@string/universe"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".SpaceTimeActivity"
+            android:label="@string/space_time"
+            android:theme="@android:style/Theme.NoTitleBar"  />
+    </application>
+
+</manifest>
