@@ -22,7 +22,7 @@ public class PlanetsActivity extends Activity {
         buttons.add(new Button("Луна", R.drawable.moon));
         buttons.add(new Button("Марс", R.drawable.mars));
         buttons.add(new Button("Юпитер", R.drawable.jupiter));
-        buttons.add(new Button(" Сатурн", R.drawable.saturn));
+        buttons.add(new Button("Сатурн", R.drawable.saturn));
         buttons.add(new Button("Уран и Нептун", R.drawable.uranus_neptune));
 
 

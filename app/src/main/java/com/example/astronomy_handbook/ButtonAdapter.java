@@ -1,14 +1,12 @@
 package com.example.astronomy_handbook;
 
 import android.content.Context;
-import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -43,15 +41,30 @@ public class ButtonAdapter extends ArrayAdapter<Button> {
 
     android.widget.Button button1 = buttonItemView.findViewById(R.id.submenu_button);
     button1.setText(button.getText());
-    button1.setId(button.getImage());
+    button1.setCompoundDrawablesWithIntrinsicBounds(0, 0, button.getImage(), 0);
 /*    button1.setOnClickListener(view -> {
-        Intent button_menuIntent = new Intent(MenuActivity, ArticleActivity.class);
+        Intent button_menuIntent = new Intent(getContext().this, ArticleActivity.class);
         startActivity(button_menuIntent);
     });*/
-/*    Drawable image = getContext().getDrawable(R.drawable.mars);
-    button1.setCompoundDrawables(null, null,image, null);*/
 
+    button1.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Toast toast = Toast.makeText(getContext(), "Welcome!", Toast.LENGTH_LONG);
+            toast.show();
+/*            View inflate = LayoutInflater.from(getContext()).inflate(
+                    R.layout.activity_article, parent, false
+            );*/
+        }
+    });
 
     return buttonItemView;
     }
+
+    public void onClick() {
+        Toast toast = Toast.makeText(getContext(), "Welcome!", Toast.LENGTH_LONG);
+        toast.show();
+    }
+
+
 }

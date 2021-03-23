@@ -21,7 +21,7 @@
         android:textColor="@color/background"
         android:textAlignment="textStart"
         android:textAppearance="@style/submenu"
-        android:onClick=""/>
+        />
 
 
 </LinearLayout>
