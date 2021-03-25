@@ -23,7 +23,7 @@ public class StarsActivity extends Activity {
         buttons.add(new Button("Белые карлики", R.drawable.white_dwarf));
         buttons.add(new Button("Пульсары", R.drawable.pulsar));
         buttons.add(new Button("Сверхновые", R.drawable.superstar));
-        buttons.add(new Button("Черные дыры", R.drawable.blackhole));
+        buttons.add(new Button("Черные дыры", R.drawable.blackhole_submenu));
 
 
         ButtonAdapter adapter = new ButtonAdapter(this, android.R.layout.activity_list_item, buttons);

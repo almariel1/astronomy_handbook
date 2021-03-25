@@ -43,6 +43,10 @@
             android:name=".SpaceTimeActivity"
             android:label="@string/space_time"
             android:theme="@android:style/Theme.NoTitleBar"  />
+        <activity
+            android:name=".ArticleActivity"
+            android:label="@string/article"
+            android:theme="@android:style/Theme.NoTitleBar"  />
     </application>
 
 </manifest>

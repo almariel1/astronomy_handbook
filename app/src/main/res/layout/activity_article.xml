@@ -1,19 +1,18 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/main_menu"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
     android:orientation="vertical">
 
-    <ImageView
+    <Button
         android:id="@+id/article_place"
         android:layout_width="379dp"
-        android:layout_height="185dp"
+        android:layout_height="150dp"
         android:layout_marginLeft="-75dp"
         android:drawableRight="@drawable/mercury"
-        android:src="@drawable/article_place" />
+        android:paddingRight="30dp"
+        android:background="@drawable/article_place" />
 
     <TextView
             android:id="@+id/article"
@@ -24,8 +23,8 @@
             android:layout_marginTop="40dp"
             android:layout_marginRight="40dp"
             android:layout_marginLeft="40dp"
+            android:textSize="12pt"
             android:textAppearance="@style/article"
-            android:text="@string/article_mercury"
-            />
+            android:text="@string/article_mercury" />
 
 </LinearLayout>

@@ -16,14 +16,14 @@ public class UniverseActivity extends Activity {
         setContentView(R.layout.menu_list);
 
         ArrayList<Button> buttons = new ArrayList<>();
-        buttons.add(new Button("Большой взрыв", R.drawable.mercury));
-        buttons.add(new Button("Расширяющаяся Вселенная", R.drawable.venus));
-        buttons.add(new Button("Реликтовое излучение", R.drawable.earth));
-        buttons.add(new Button("Космическое излучение", R.drawable.moon));
-        buttons.add(new Button("Гамма-всплески", R.drawable.mars));
-        buttons.add(new Button("Квазары", R.drawable.jupiter));
-        buttons.add(new Button("Темная материя", R.drawable.jupiter));
-        buttons.add(new Button("Темная энергия", R.drawable.jupiter));
+        buttons.add(new Button("Большой взрыв", R.drawable.bigbang));
+        buttons.add(new Button("Расширяющаяся Вселенная", R.drawable.expanding_universe));
+        buttons.add(new Button("Реликтовое излучение", R.drawable.relict_radiation));
+        buttons.add(new Button("Космическое излучение", R.drawable.cosmical_radiation));
+        buttons.add(new Button("Гамма-всплески", R.drawable.gamma_ray_burst));
+        buttons.add(new Button("Квазары", R.drawable.quasar));
+        buttons.add(new Button("Темная материя", R.drawable.black_matter));
+        buttons.add(new Button("Темная энергия", R.drawable.energy));
 
 
         ButtonAdapter adapter = new ButtonAdapter(this, android.R.layout.activity_list_item, buttons);

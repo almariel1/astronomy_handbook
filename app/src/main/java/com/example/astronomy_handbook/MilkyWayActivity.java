@@ -17,12 +17,12 @@ public class MilkyWayActivity extends Activity {
         setContentView(R.layout.menu_list);
 
         ArrayList<Button> buttons = new ArrayList<>();
-        buttons.add(new Button("Созвездия", R.drawable.mercury));
-        buttons.add(new Button("Туманности", R.drawable.venus));
-        buttons.add(new Button("Объекты Мессье", R.drawable.earth));
-        buttons.add(new Button("Млечный Путь", R.drawable.moon));
-        buttons.add(new Button("Другие галактики", R.drawable.mars));
-        buttons.add(new Button("Скопление галактик", R.drawable.jupiter));
+        buttons.add(new Button("Созвездия", R.drawable.constellations));
+        buttons.add(new Button("Туманности", R.drawable.nebulas));
+        buttons.add(new Button("Объекты Мессье", R.drawable.messier));
+        buttons.add(new Button("Млечный Путь", R.drawable.milkyway_submenu));
+        buttons.add(new Button("Другие галактики", R.drawable.other_galaxies));
+        buttons.add(new Button("Скопление галактик", R.drawable.many_galaxies));
 
 
         ButtonAdapter adapter = new ButtonAdapter(this, android.R.layout.activity_list_item, buttons);
