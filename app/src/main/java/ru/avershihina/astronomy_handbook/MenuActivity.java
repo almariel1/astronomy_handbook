@@ -1,9 +1,8 @@
-package com.example.astronomy_handbook;
+package ru.avershihina.astronomy_handbook;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
 import android.widget.ImageView;
 
 import androidx.annotation.Nullable;

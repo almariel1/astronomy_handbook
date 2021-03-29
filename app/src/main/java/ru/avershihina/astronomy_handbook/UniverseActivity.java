@@ -1,4 +1,4 @@
-package com.example.astronomy_handbook;
+package ru.avershihina.astronomy_handbook;
 
 import android.app.Activity;
 import android.os.Bundle;

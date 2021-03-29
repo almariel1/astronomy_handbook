@@ -1,18 +1,11 @@
-package com.example.astronomy_handbook;
+package ru.avershihina.astronomy_handbook;
 
 import android.app.Activity;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.text.method.ScrollingMovementMethod;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.widget.Scroller;
-import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
-
-import java.util.ArrayList;
 
 import androidx.annotation.Nullable;
 
@@ -21,17 +14,11 @@ public class ArticleActivity extends Activity {
     DatabaseHelper databaseHelper;
     SQLiteDatabase db;
     Cursor cursor;
-    //SimpleCursorAdapter cursorAdapter;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_article);
-
-
-        // получить текстовое значение кнопки и картинку кнопки + крайне желательно получить наименование активности, откуда пришел запрос на формирование подменю
-        // найти текстовое значение кнопки со значениями в столбце name каждой из таблиц БД
-        // вывести текст статьи в текстовое поле, картинку поместить в "кнопку"
 
         Bundle components = getIntent().getExtras();
 
@@ -53,14 +40,12 @@ public class ArticleActivity extends Activity {
         // открываем подключение
         db = databaseHelper.open();
 
-        String className = components.get("className").toString();
-        System.out.println(className);
         //получаем данные из бд в виде курсора
         String[] columns = {DatabaseHelper.COLUMN_TEXT};
         String where_condition = DatabaseHelper.COLUMN_NAME + " = ?";
         String [] where_args = {components.get("name").toString()};
 
-        String tableName = getTable(className);
+        String className = components.get("className").toString();
 
         cursor = db.query(
                 getTable(className),

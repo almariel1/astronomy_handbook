@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">astronomy_handbook</string>
+    <string name="app_name">Астрономия за 30 секунд</string>
     <string name="astronomy">Астрономия</string>
     <string name="thirty_seconds">за 30 секунд</string>
     <string name="planets">Планеты</string>

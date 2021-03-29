@@ -1,4 +1,4 @@
-package com.example.astronomy_handbook;
+package ru.avershihina.astronomy_handbook;
 
 public class Button {
 

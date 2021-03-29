@@ -1,8 +1,7 @@
-package com.example.astronomy_handbook;
+package ru.avershihina.astronomy_handbook;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import java.util.ArrayList;
