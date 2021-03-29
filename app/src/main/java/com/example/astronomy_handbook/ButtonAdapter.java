@@ -16,8 +16,11 @@ import androidx.annotation.RequiresApi;
 
 public class ButtonAdapter extends ArrayAdapter<Button> {
 
-    public ButtonAdapter(@NonNull Context context, int resource, @NonNull ArrayList<Button> list_buttons) {
+    private String mClassName;
+
+    public ButtonAdapter(@NonNull Context context, int resource, @NonNull ArrayList<Button> list_buttons, String className) {
         super(context, resource, list_buttons);
+        mClassName = className;
     }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
@@ -38,6 +41,9 @@ public class ButtonAdapter extends ArrayAdapter<Button> {
 
     button1.setOnClickListener(view -> {
         Intent button_menuIntent = new Intent(getContext(), ArticleActivity.class);
+        button_menuIntent.putExtra("className", mClassName);
+        button_menuIntent.putExtra("name", button.getText());
+        button_menuIntent.putExtra("image", button.getImage());
         getContext().startActivity(button_menuIntent);
     });
 

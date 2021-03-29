@@ -25,7 +25,7 @@ public class MilkyWayActivity extends Activity {
         buttons.add(new Button("Скопление галактик", R.drawable.many_galaxies));
 
 
-        ButtonAdapter adapter = new ButtonAdapter(this, android.R.layout.activity_list_item, buttons);
+        ButtonAdapter adapter = new ButtonAdapter(this, android.R.layout.activity_list_item, buttons, this.getClass().getSimpleName());
         ListView listView = findViewById(R.id.list);
         listView.setAdapter(adapter);
     }

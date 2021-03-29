@@ -26,9 +26,9 @@ public class PlanetsActivity extends Activity {
         buttons.add(new Button("Сатурн", R.drawable.saturn));
         buttons.add(new Button("Уран и Нептун", R.drawable.uranus_neptune));
 
-        ArrayAdapter<Button> buts = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, buttons);
+        //ArrayAdapter<Button> buts = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, buttons);
 
-        ButtonAdapter adapter = new ButtonAdapter(this, android.R.layout.activity_list_item, buttons);
+        ButtonAdapter adapter = new ButtonAdapter(this, android.R.layout.activity_list_item, buttons, this.getClass().getSimpleName());
         ListView listView = findViewById(R.id.list);
         listView.setAdapter(adapter);
     }

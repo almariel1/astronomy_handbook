@@ -26,7 +26,7 @@ public class UniverseActivity extends Activity {
         buttons.add(new Button("Темная энергия", R.drawable.energy));
 
 
-        ButtonAdapter adapter = new ButtonAdapter(this, android.R.layout.activity_list_item, buttons);
+        ButtonAdapter adapter = new ButtonAdapter(this, android.R.layout.activity_list_item, buttons, this.getClass().getSimpleName());
         ListView listView = findViewById(R.id.list);
         listView.setAdapter(adapter);
     }

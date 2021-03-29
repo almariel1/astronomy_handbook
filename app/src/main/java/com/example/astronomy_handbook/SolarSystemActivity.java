@@ -24,7 +24,7 @@ public class SolarSystemActivity extends Activity {
         buttons.add(new Button("Метеоры", R.drawable.meteor));
 
 
-        ButtonAdapter adapter = new ButtonAdapter(this, android.R.layout.activity_list_item, buttons);
+        ButtonAdapter adapter = new ButtonAdapter(this, android.R.layout.activity_list_item, buttons, this.getClass().getSimpleName());
         ListView listView = findViewById(R.id.list);
         listView.setAdapter(adapter);
     }

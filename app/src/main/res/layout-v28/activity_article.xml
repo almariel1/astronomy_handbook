@@ -9,7 +9,7 @@
         android:id="@+id/article_place"
         android:layout_width="379dp"
         android:layout_height="150dp"
-        android:layout_marginStart="-55dp"
+        android:layout_marginStart="-75dp"
         android:drawableEnd="@drawable/mercury"
         android:paddingEnd="30dp"
         android:paddingStart="90dp"
@@ -17,14 +17,16 @@
         android:text="@string/article_name"
         android:textColor="@color/background"
         android:textSize="12pt"
-        android:textFontWeight="1000"
+        android:textFontWeight="700"
         android:background="@drawable/article_place" />
 
     <TextView
             android:id="@+id/article"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+            android:layout_alignBottom="@id/article_place"
+            android:layout_below="@id/article_place"
+            android:layout_marginTop="40dp"
             android:layout_marginRight="40dp"
             android:layout_marginLeft="40dp"
             android:textSize="10pt"
